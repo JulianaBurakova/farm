@@ -239,6 +239,14 @@ main .text h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2em;
 }
+
+#image-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes them square */
+  object-fit: cover; /* Keeps content nicely cropped */
+  display: block;
+}
+
 main .text p {
   font-size: 1.1rem;
   line-height: 1.6;
